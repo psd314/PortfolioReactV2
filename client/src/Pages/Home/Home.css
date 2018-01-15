@@ -1,0 +1,17 @@
+#home {
+    position: relative;
+    top: 95px;
+    left: 100px;
+}
+
+#about {
+    position: relative;
+    top: 295px;
+    left: -100px;
+}
+
+#projects {
+    position: relative;
+    top: 295px;
+    left: 30px;
+}

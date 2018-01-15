@@ -1,0 +1,10 @@
+.navMenu {
+    margin: auto;
+}
+
+nav.navMenu {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    padding-top: 3vh;
+}

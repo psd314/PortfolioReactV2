@@ -1,0 +1,11 @@
+.placardStyles {
+    margin: auto;
+    position: relative;
+    top: 15vh;
+    height: 60vh;
+    width: 60%;
+    background: rgba(25, 25, 25, .8);
+    border-radius: 30px;
+    color: #ccc;
+    display: inline-block;
+}

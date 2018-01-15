@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-image: url("./assets/images/spaceBackground.jpeg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer {
+  height: 5vh;
+  color: white;
+  text-align: right;
+}
+
+footer p {
+  margin-right: 20px;
+}
+
+.container {
+  height: 95vh;
+}
+
+
+
+

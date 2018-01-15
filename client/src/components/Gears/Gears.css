@@ -1,0 +1,30 @@
+
+path {
+  fill-rule: evenodd;
+  stroke: rgba(200, 200, 200, .5);
+  stroke-width: 2px;
+}
+
+.sun path {
+  fill: rgba(0, 0, 0, .7);
+}
+
+.planet path {
+  fill: rgba(0, 0, 0, .7);
+}
+
+.annulus path {
+  fill: rgba(0, 0, 0, .7);
+}
+
+/* .gearsContainer {
+  padding-top: 7.5%;
+} */
+
+.gearLink div{
+  position: relative;
+  top: 200px;
+  right: 300px;
+}
+
+

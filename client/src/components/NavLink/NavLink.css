@@ -1,0 +1,14 @@
+.links {
+    display: inline-block;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+    font: 2rem Georgia;
+}
+
+div#projects, div#about, div#home {
+    display: inline-block;
+}
+

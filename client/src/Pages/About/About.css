@@ -1,0 +1,42 @@
+.aboutPlacard {
+    margin: auto;
+    position: relative;
+    top: 15vh;
+    height: 60vh;
+    width: 60%;
+    background: rgba(25, 25, 25, .8);
+    border-radius: 30px;
+    color: #ccc;
+    display: inline-block;
+}
+
+.photo {
+    width: 80%;
+    border-radius: 30px;
+}
+
+img.photo {
+    overflow: hidden;
+}
+
+.smallLinks {
+    margin-left: 25px;
+    text-align: left;
+}
+.smallLinks a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+.photoBox {
+    width: 25%;
+    /* border: 1px solid white; */
+    margin: auto;
+}
+
+.aboutText {
+    width: 75%;
+    /* border: 1px solid white; */
+    margin: auto;
+}
