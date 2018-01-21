@@ -1,0 +1,24 @@
+{
+  "name": "portfolioreactv2",
+  "version": "1.0.0",
+  "description": "Portfolio built using React, Redux, D3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psd314/PortfolioReactV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psd314/PortfolioReactV2/issues"
+  },
+  "homepage": "https://github.com/psd314/PortfolioReactV2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
