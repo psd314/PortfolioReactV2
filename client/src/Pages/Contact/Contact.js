@@ -9,12 +9,12 @@ class Contact extends Component {
         return (
             <div className="Contact">
                 <NavMenu/>
-                <h1>Contact</h1>
+                <h1>Get In Touch</h1>
                 <div className="contactText">
 
                     <div className="socialLinks">
-                        <a target="_blank" rel="noopener noreferrer"  href="https://github.com/psd314"><img className="social" src={gitHub} alt="git hub logo"/></a>
-                        <a target="_blank" rel="noopener noreferrer"  href="https://www.linkedin.com/in/philippe-dixon/"><img className="social" src={linkedIn} alt="linked in logo"/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/psd314"><img className="social" src={gitHub} alt="git hub logo"/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/philippe-dixon/"><img className="social" src={linkedIn} alt="linked in logo"/></a>
                     </div>
 
                     <p>

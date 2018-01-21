@@ -14,3 +14,24 @@
     margin-bottom: 40px;
 }
 
+.projectLinks {
+    width: 50%;
+    margin: 100px auto 0px;
+}
+
+.projectLinks h3 {
+    text-align: left;
+}
+.projectLinks a {
+    color: white;
+}
+
+.projectLinks a:hover {
+    color: rgba(255, 255, 255, .5);
+  }
+
+  .projectLinks img {
+      width: 50px;
+      margin-right: 20px;
+  }
+
