@@ -8,6 +8,7 @@ const NavMenu = () => {
         <nav className="navMenu">
             <NavLink pageRoute="/" linkText="Home" />
             <NavLink pageRoute="/About" linkText="About" />
+            <NavLink pageRoute="/Contact" linkText="Contact" />
             <NavLink pageRoute="/Projects" linkText="Projects" />
         </nav>
     );

@@ -1,0 +1,70 @@
+.panelbarHeaderCollapsed
+{ 		
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: hand;
+	cursor: pointer;
+	background-image: url(Img/HeaderExpandedBg.gif);
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 180px;
+	padding-left: 21px;
+	margin-top: 10px;
+	/*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/Img/HeaderCollapsedBg.png');*/
+}
+
+.panelbarHeaderHover 
+{ 		
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: hand;
+	cursor: pointer;
+	background-image: url(Img/HeaderExpandedBg.gif);
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 180px;
+	padding-left: 21px;
+	margin-top: 10px;
+	/*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/Img/HeaderCollapsedBg.png');*/
+}
+
+.panelbarHeaderExpand
+{
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: hand;
+	cursor: pointer;
+	background-image: url(Img/HeaderCollapsedBg.gif);
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 180px;
+	padding-left: 21px;
+	margin-top: 10px;
+}
+.panelbarItem 
+{
+	color: #FFFFFF;
+	width: 180px;
+	cursor: hand;
+	cursor: pointer;
+	/*background-color: #D7DEF8;*/
+	text-decoration: none;
+	border-left: 1px solid #white;
+	border-right: 1px solid #white;
+	padding-left: 0px;
+	padding-right: 1px;
+	height: 19px;
+}
+.panelbarItemHover
+{
+	color: #FFFFFF;
+	width: 189px;
+	cursor: hand;
+	cursor: pointer;
+	background-color: #D7DEF8;
+	text-decoration: none;
+	border-left: 1px solid #white;
+	border-right: 1px solid #white;
+	padding-left: 180px;
+	height: 19px;
+}

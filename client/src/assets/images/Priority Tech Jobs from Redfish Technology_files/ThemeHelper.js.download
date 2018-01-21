@@ -1,0 +1,285 @@
+﻿var settheme = function (navigationbackgroundcolor, navigationheadercolor, titlebarbackgroundcolor, hide) {
+    if (hide == "navigationbar") {
+        HideNavigationBar();
+    }
+    else if (hide == "header") {
+        HideHeader();
+    }
+    var i;
+    for (i = 0; i < document.styleSheets.length; i++) {
+        if (document.styleSheets[i].href != null) {
+            //alert(document.styleSheets[i].cssText);
+            //document.styleSheets[i].rules[0].style.backgroundColor = navigationheadercolor;
+            if (document.styleSheets[i].href.indexOf('Common.css') != (-1)) {
+                try {
+                    //Common.css Label
+                    document.styleSheets[i].rules[0].style.color = navigationheadercolor;
+
+                    //Common.css SelectedRow_Outlook td
+                    document.styleSheets[i].rules[1].style.backgroundColor = navigationheadercolor;
+
+                    //Common.css #ctl00_ContentPlaceHolder_SearchResultsGrid_ctl00_GroupPanel
+                    document.styleSheets[i].rules[2].style.backgroundColor = navigationheadercolor;
+
+                    //Common.css a.TreeNode
+                    document.styleSheets[i].rules[3].style.color = navigationheadercolor;
+
+                    //Common.css a.TreeNodeSelect
+                    document.styleSheets[i].rules[4].style.color = navigationheadercolor;
+
+                    //Common.css GoButton
+                    document.styleSheets[i].rules[5].style.backgroundColor = titlebarbackgroundcolor;
+                }
+                catch (e) {
+                    //Common.css Label
+                    document.styleSheets[i].cssRules[0].style.color = navigationheadercolor;
+
+                    //Common.css SelectedRow_Outlook td
+                    document.styleSheets[i].cssRules[1].style.backgroundColor = navigationheadercolor;
+
+                    //Common.css #ctl00_ContentPlaceHolder_SearchResultsGrid_ctl00_GroupPanel
+                    document.styleSheets[i].cssRules[2].style.backgroundColor = navigationheadercolor;
+
+                    //Common.css a.TreeNode
+                    document.styleSheets[i].cssRules[3].style.color = navigationheadercolor;
+
+                    //Common.css a.TreeNodeSelect
+                    document.styleSheets[i].cssRules[4].style.color = navigationheadercolor;
+
+                    //Common.css GoButton
+                    document.styleSheets[i].cssRules[5].style.backgroundColor = titlebarbackgroundcolor;
+                }
+            }
+            if (document.styleSheets[i].href.indexOf('Content.css') != (-1)) {
+                try {
+                    //Content.css .NavigationPaneStyle
+                    document.styleSheets[i].rules[0].style.backgroundColor = navigationbackgroundcolor;
+
+                    //Content.css .NavigationInnerPanel
+                    document.styleSheets[i].rules[1].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css .heading
+                    document.styleSheets[i].rules[2].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css paneseparator
+                    document.styleSheets[i].rules[3].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css NavigationExplorerTree
+                    document.styleSheets[i].rules[4].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css BasketMenuItem_Panel
+                    document.styleSheets[i].rules[5].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css MyAccountPanelMenuItem_Text
+                    document.styleSheets[i].rules[6].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css NavigationLink
+                    document.styleSheets[i].rules[7].style.color = navigationheadercolor;
+
+                    //paneNavigationStylewithborder
+                    document.styleSheets[i].rules[8].style.backgroundColor = titlebarbackgroundcolor;
+                }
+                catch (e) {
+                    //Content.css .NavigationPaneStyle
+                    document.styleSheets[i].cssRules[0].style.backgroundColor = navigationbackgroundcolor;
+
+                    //Content.css .NavigationInnerPanel
+                    document.styleSheets[i].cssRules[1].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css .heading
+                    document.styleSheets[i].cssRules[2].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css paneseparator
+                    document.styleSheets[i].cssRules[3].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css NavigationExplorerTree
+                    document.styleSheets[i].cssRules[4].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //Content.css NavigationLink
+                    document.styleSheets[i].cssRules[7].style.color = navigationheadercolor;
+
+                    //paneNavigationStylewithborder
+                    document.styleSheets[i].cssRules[8].style.backgroundColor = titlebarbackgroundcolor;
+                }
+            }
+            if (document.styleSheets[i].href.indexOf('PanelBar/Styles.css') != (-1)) {
+                try {
+                    //Panalbar style.css panelbarHeaderCollapsed, panelbarHeaderHover, panelbarHeaderExpand
+                    document.styleSheets[i].rules[0].style.backgroundColor = navigationheadercolor;
+                    document.styleSheets[i].rules[1].style.backgroundColor = navigationheadercolor;
+                    document.styleSheets[i].rules[2].style.backgroundColor = navigationheadercolor;
+                }
+                catch (e) {
+                    //Panalbar style.css panelbarHeaderCollapsed, panelbarHeaderHover, panelbarHeaderExpand
+                    document.styleSheets[i].cssRules[0].style.backgroundColor = navigationheadercolor;
+                    document.styleSheets[i].cssRules[1].style.backgroundColor = navigationheadercolor;
+                    document.styleSheets[i].cssRules[2].style.backgroundColor = navigationheadercolor;
+                }
+            }
+            if (document.styleSheets[i].href.indexOf('Splitter.RadControls.css') != (-1)) {
+
+                try {
+                    //Splitter.RadControls.css:- .RadSplitter_RadControls .resizeBar
+                    document.styleSheets[i].rules[0].style.backgroundColor = titlebarbackgroundcolor;
+                }
+                catch (e) {
+                    //Splitter.RadControls.css:- .RadSplitter_RadControls .resizeBar
+                    document.styleSheets[i].cssRules[0].style.backgroundColor = titlebarbackgroundcolor;
+                }
+            }
+            if (document.styleSheets[i].href.indexOf('Container.css') != (-1)) {
+                try {
+                    //Container.css maintablestyle
+                    document.styleSheets[i].rules[0].style.backgroundColor = titlebarbackgroundcolor;
+
+                    document.styleSheets[i].rules[3].style.backgroundColor = navigationheadercolor;
+                }
+                catch (e) {
+                    document.styleSheets[i].cssRules[3].style.backgroundColor = navigationheadercolor;
+                }
+            }
+
+            if (document.styleSheets[i].href.indexOf('Grid.Outlook.css') != (-1)) {
+                try {
+                    //Container.css maintablestyle
+                    document.styleSheets[i].rules[3].style.backgroundColor = titlebarbackgroundcolor;
+
+                    //document.styleSheets[i].rules[0].style.backgroundColor = "#FF0000";
+                    //for (ii = 0; ii < document.styleSheets[i].rules.length; ii++) {
+                    //    document.styleSheets[i].rules[ii].style.fontbold = true;
+                    //}
+                    //alert('hi');
+                }
+                catch (e) {
+                }
+            }
+        }
+    }
+}
+
+function HideHeader()
+{
+    try
+    {
+        var navigationpane;
+        navigationpane=document.getElementById("RAD_SPLITTER_PANE_CONTENT_ctl00_NavigationControl_NavigationPane");
+        if(navigationpane != null)
+        {
+            navigationpane.style.border="solid 1px #162e5c";
+            if (navigator.appName.indexOf("Microsoft Internet Explorer")==(-1))
+            {
+                //alert(navigationpane.style.width);
+                navigationpane.style.width=(parseInt(navigationpane.style.width)-2)+"px";
+                //alert(navigationpane.style.width);
+                //alert(navigationpane.style.height);
+                navigationpane.style.height=(parseInt(navigationpane.style.height)-2)+"px";
+                //alert(navigationpane.style.height);
+            }
+        }
+	}
+    catch(err)
+    {
+    }
+}
+
+function HideNavigationBar()
+{
+    try
+    {
+        var navigationpane = document.getElementById("RAD_SPLITTER_PANE_CONTENT_ctl00_paneNavigationPanel");
+        if(navigationpane != null)
+        {
+            navigationpane.style.width="1px";
+            //navigationpane.style.overflow="hidden";
+            navigationpane.style.display="none";
+            document.getElementById("ctl00_paneLeftSeparator").style.width="1px";
+            document.getElementById("ctl00_paneMiddleSeparator").style.width="1px";
+        }
+    }
+    catch(err)
+    {
+    }
+//    document.getElementById("RAD_SPLITTER_ctl00_splitterMainTable").style.width="100%";
+//    document.getElementById("RAD_SPLITTER_ctl00_ContentPlaceHolder_RadSplitter2").style.width="100%";
+//    document.getElementById("ctl00_ContentPlaceHolder_RadSplitter2").style.width="100%";
+//    document.getElementById("RAD_SPLITTER_PANE_CONTENT_ctl00_paneContentTemplate").style.width="100%";
+//    
+//    document.getElementById("ctl00_paneLeftSeparator").style.width="1px";
+//    document.getElementById("ctl00_paneNavigationPanel").style.width="1px";
+//    document.getElementById("ctl00_paneMiddleSeparator").style.width="1px";
+//    document.getElementById("ctl00_ContentPlaceHolder_dummypane").style.width="0px";
+}
+
+function SetPopupTheme(navigationbackgroundcolor,navigationheadercolor,titlebarbackgroundcolor)
+{
+    var i;
+    for(i=0;i<document.styleSheets.length;i++)
+    {
+        if(document.styleSheets[i].href != null)
+        {
+            if(document.styleSheets[i].href.indexOf('Container.css') != (-1))
+            {
+                try
+                {
+                    //popupwindow border color Container.css:- PopupContainter
+                    document.styleSheets[i].rules[1].style.borderColor = titlebarbackgroundcolor;
+                    
+                    //popupwindow title color Container.css:- popupHeaderStyle
+                    document.styleSheets[i].rules[2].style.backgroundColor = titlebarbackgroundcolor;
+                }
+                catch(e)
+                {
+                    //popupwindow border color Container.css:- PopupContainter
+                    document.styleSheets[i].cssRules[1].style.borderColor = titlebarbackgroundcolor;
+                    
+                    //popupwindow title color Container.css:- popupHeaderStyle
+                    document.styleSheets[i].cssRules[2].style.backgroundColor = titlebarbackgroundcolor;
+                }
+            }
+            if(document.styleSheets[i].href.indexOf('Common.css') != (-1))
+            {
+                try
+                {
+                    //Common.css Label
+                    //document.styleSheets[i].rules[0].style.color = navigationheadercolor;
+                }
+                catch(e)
+                {
+                    //Common.css Label
+                    //document.styleSheets[i].cssRules[0].style.color = navigationheadercolor;
+                }
+            }
+        }
+    }
+}
+
+function alertcontents(sender)
+{
+	var i;
+	var str="";
+	for (i in sender)
+	{
+	    str=str+i+" : ";
+	    if(i%5==0)
+	    	str+"\n";
+	}
+	alert(str);
+}
+function alertstylesheets()
+{
+    try
+    {
+        var i,str;
+        for(i=0;i<document.styleSheets.length;i++)
+        {
+            alert(document.styleSheets[i].href); 
+            if(document.styleSheets[i].href != null)
+                str += (i+" : "+document.styleSheets[i].href+"\n");
+        }
+        alert(str);
+    }
+    catch(e)
+    {
+        alert(e);
+    }
+}

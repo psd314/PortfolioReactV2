@@ -18,7 +18,8 @@ path {
 }
 
 /* .gearsContainer {
-  padding-top: 7.5%;
+  position: relative;
+  top: -10vh;
 } */
 
 .gearLink div{

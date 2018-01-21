@@ -1,0 +1,760 @@
+
+/*==============================================IMPORTANT=====================================*/
+/*Please add new classes at the end. Otherwise it may cause the color themes not work properly*/
+/*============================================================================================*/
+.NavigationPaneStyle
+{
+	/*padding-bottom:20px !important;*/
+	overflow-x:hidden !important;
+	overflow-y:auto !important;
+	text-align:center;
+	/*width:218px !important;*/
+	height:100%;
+	/*border: solid 1px #162e5c;*/
+}
+
+.NavigationInnerPanel
+{
+	padding: 9px 10px 8px 10px;
+	width:100% !important;
+}
+
+.heading
+{
+}
+
+.paneseparator
+{
+	overflow:hidden;
+}
+
+.NavigationExplorerTree
+{
+	padding-top: 5px;
+	padding-left: 1px;
+	width:100% !important;
+}
+
+#BasketMenuItem_Panel
+{
+}
+
+#MyAccountPanelMenuItem_Text
+{
+}
+/*.NavigationInnerPanelJobbasket
+{
+	padding: 9px 10px 8px 10px;
+	width:100% !important;
+	padding-top: 11px;
+	padding-left: 9px;
+}*/
+
+.NavigationLink
+{
+	
+}
+
+.paneNavigationStylewithborder
+{
+	border: solid 1px #162e5c;
+	/*border:0 !important;*/
+	overflow-x:hidden;
+	overflow-y:hidden;
+	height:100%;
+}
+
+/* Themehelper accessing styles upto this */
+
+.EditFormStyle
+{
+	overflow:auto;
+}
+
+#ctl00_NavigationControl_MyAccountPanelMenuItem_ExplorerTree
+{
+	overflow:hidden !important;
+}
+
+A.NavigationLink:link, A.NavigationLink:visited
+{
+	text-decoration: underline;
+}
+
+A.NavigationLink:hover
+{
+	color: black;
+	text-decoration: underline;
+}
+
+.paneNavigationStyle
+{
+	/*border: solid 1px #162e5c;*/
+	overflow-x:hidden;
+	overflow-y:hidden;
+	height:100%;
+}
+
+/* Style for the title text color*/
+.titletext
+{
+	color:#000000;
+}
+
+/* Start search result columns */
+.col2
+{
+	background: white;
+	border: solid 1px #162e5c;
+	padding-bottom:20px;
+}
+.col3
+{
+	background: white;
+	border: solid 1px #162e5c;
+}
+/* End search result columns */
+
+#ctl00_ContentPlaceHolder_RadSplitBar1
+{
+	outline:0; 
+	outline-style:none;
+}
+
+/* Start Job search columns */
+#col4
+{
+	border: solid 1px #162e5c;
+}
+
+/*#ctl00_ContentPlaceHolder_jobbasketpanel
+{
+	overflow-y:auto;
+	overflow-x:hidden;
+}*/
+
+#ctl00_ContentPlaceHolder_JobSearchContent
+{
+	padding: 12px;
+	background: white;
+	width:auto;
+	height:100%;
+}
+
+#ctl00_ContentPlaceHolder_SortPanel1 p
+{
+	margin: -2px 0px 8px 0px;
+}
+/* End Job search columns */
+
+#job_details
+{
+	padding: 0px;
+}
+
+.NavigationPanelStyle
+{
+	height:100%;
+	width:187px;
+	border:0;
+}
+
+#Navigation
+{
+	/*background: #6487dc;*/
+	width:189px;
+}
+
+.NavigationSplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.paneNavigationPanelstyle
+{
+	/*padding-bottom:2px;
+	margin-bottom:2px;*/
+}
+
+.SavedJobsPanelStyle
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow-x:auto;
+	overflow-y:auto;
+	border: solid 1px #162e5c;
+}
+
+.SavedJobsSplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.SavedJobsPaneStyle
+{
+	padding-bottom:2px;
+	padding-right:3px;
+}
+
+.SkillsSplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.SkillsPaneStyle
+{
+	padding-bottom:2px;
+	padding-right:3px;
+}
+/* Styles added for ThankYou.aspx*/
+.ThankyousplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.ThankyouPaneStyle
+{
+	padding-bottom:2px;
+	padding-right:1px;
+	width:100%;
+}
+
+.ThankYouContainerStyle
+{
+	width:auto;
+	height:100%;
+	position:relative;
+	overflow-x:auto;
+	overflow-y:auto;
+	border: solid 1px #162e5c;
+}
+/* End - Styles for ThankYou.aspx*/
+
+/* Styles added for EditEmbed.aspx*/
+.EditEmbedsplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.EditEmbedPaneStyle
+{
+	padding-bottom:2px;
+	padding-right:3px;
+}
+/* End - Styles for EditEmbed.aspx*/
+
+/* Styles added for JobBasket.aspx*/
+.JobBasketSplitterStyle
+{
+	width:100%;
+	height:100%;
+	border:0;
+}
+
+.JobBasketPaneStyle
+{
+	padding-bottom:12px;
+	padding-right:3px;
+	width:100%;
+}
+/* End - Styles for JobBasket.aspx*/
+
+/* Styles added for SearchJobs.aspx*/
+.SearchJobsSplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.SearchJobsPaneStyle
+{
+	padding-right:3px;
+	padding-bottom:12px;
+}
+/* End - Styles for SearchJobs.aspx*/
+
+#MainTitle
+{
+	/*background: #c5daf9; */
+	color: white; 
+	font-size: 12px; 
+	font-weight: bold; 
+	border-bottom: solid 1px #162e5c; 
+	/*height: 19px; */
+	/*vertical-align:middle;*/
+	padding-left: 7px;
+}
+
+/* #MainTitle span
+{
+	float: left;
+}*/
+
+#JobPreviewIcon
+{
+	background: url(Images\search.png);
+	width: 16px;
+	height: 16px;
+}
+
+#ctl00_ContentPlaceHolder_linkSaveSearch
+{
+	position: static;
+	right: 5px;
+	padding-right: 5px;
+	font-size: 10px;
+	font-weight: normal;
+	/*color: #375092;*/
+	text-decoration: underline;
+}
+
+#linkClosePopup
+{
+	position: absolute;
+	right: 5px;
+	padding-right: 5px;
+	font-size: 10px;
+	font-weight: normal;
+	color: #375092;
+	text-decoration: underline;
+}
+
+A#MainTitleLink:hover
+{
+	font-size: 10px;
+	font-weight: normal;
+	color: black;
+	text-decoration: underline;
+}
+
+/*.ReadingPanePanel
+{
+	padding: 8px;
+}
+.ReadingPaneTable
+{
+	width: 95%;
+	_width: 95%;
+}*/
+
+.Keyword
+{
+	width: 100px;
+	height: 15px;
+	border: 1px solid #B4C2EC;
+}
+
+#ctl00_ContentPlaceHolder_txtHourly{
+	margin-left: 9px;
+}
+
+A.Link:link, A.Link:visited
+{
+	color: #375092;
+	text-decoration: underline;
+}
+
+A.Link:hover
+{
+	color: black;
+	text-decoration: underline;
+}
+
+tr 
+{
+	-moz-user-focus:normal;
+}
+
+.Title
+{
+	color: Black;
+	font-weight: bold;
+	font-size: 11px;
+	padding-top: 6px;	
+}
+
+.JobListIcon
+{
+	/*cursor: default;*/ /* Make the cursor consistent between icons on job list */
+}
+
+.FormLinePadding
+{
+	margin-bottom: 4px; /* Add vertical spacing between form elements */
+}
+
+.Validator
+{
+	display: none;
+}
+
+.ValidatorSummary
+{
+}
+
+/*#jobbasketpanelcontainer
+{
+	width:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}*/
+
+#ctl00_ContentPlaceHolder_FormPanel
+{
+	position: relative;
+	overflow-x:auto;
+	overflow-y:auto;
+	height:100%;
+	width:100%;
+	vertical-align:top;
+	background-color: White;
+	border: solid 1px #162e5c;
+}
+
+#SearchResultsTitle
+{
+	/*background: #c5daf9; */
+	color: white; 
+	font-size: 12px; 
+	font-weight: bold; 
+	border-left: solid 1px #162e5c; 
+	border-right: solid 1px #162e5c; 
+	border-top: solid 1px #162e5c; 
+	margin-right:1px;
+	/*height: 19px; */
+	/*vertical-align:middle;*/
+	padding-left: 7px;
+}
+
+#ctl00_ContentPlaceHolder_jobbasketpanel
+{
+	/*overflow-y:auto;*/
+	
+}
+
+#ctl00_ContentPlaceHolder_chkRememberMe
+{
+	margin-left: 0px; /* Make the remember me check box line up with form 893599*/
+}
+
+.customlist_icon
+{
+	padding-left: 2px;
+}
+
+.savesearch_listindent
+{
+	margin-left: 38px;
+}
+.customlist_label
+{
+	margin-left: 4px;
+}
+.error_icon
+{
+	position: absolute;
+	left: -18px;
+	top: 3px;
+}
+#ctl00_NavigationControl_SearchPanelMenuItem_CategoryList
+{
+	height: 20px;
+}
+
+/* START fix for full window resizing */
+.NavigationMenuContainer
+{
+	overflow: hidden;
+	width:189px;
+	padding-bottom:20px;
+}
+
+.NavigationMenuContainer td
+{
+	display:-moz-inline-table;
+} 
+
+.listboxpanel
+{
+	padding-bottom:20px;
+}
+#ctl00_ContentPlaceHolder_ReadingPaneContainer_ReadingPaneTable
+{
+	overflow-y:auto;
+	overflow-x:auto;
+	padding:8px;
+}
+
+.ReadingPaneTableStyle
+{
+	overflow-y:auto;
+	overflow-x:auto;
+	padding:8px;
+}
+
+/* End fix for full window resizing */
+
+/* START multi column list for browse categories */
+.multicol_wrapper ul
+{
+	width: 53em;	
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.multicol_wrapper ul li
+{
+	float: left;
+	width: 17em;
+}
+.multicol_wrapper br
+{
+	clear: left;
+}
+div.multicol_wrapper
+{
+	
+	
+}
+#ctl00_ContentPlaceHolder_pnlJobType
+{
+	margin-bottom:13px;
+	padding:0;
+}
+
+#ctl00_ContentPlaceHolder_pnlFeaturedJob
+{
+	margin-bottom:13px;
+	padding:0;
+}
+#ctl00_ContentPlaceHolder_pnlJobAreaCodes
+{
+	margin-bottom:13px;
+	padding:0;
+}
+
+
+#multicol_featuredjob
+{
+	margin:0;
+}
+#ctl00_ContentPlaceHolder_pnlJobLocation
+{
+	margin-bottom:13px;
+	padding:0;
+}
+#ctl00_ContentPlaceHolder_pnlBrowseCategories
+{
+	margin:0;
+	margin-bottom:13px;
+	padding:0;
+}
+
+#ctl00_ContentPlaceHolder_pnlCompensation
+{
+	
+	margin:0;
+	padding:0;
+	margin-bottom:10px;
+}
+#ctl00_ContentPlaceHolder_pnlJobCategories
+{
+	margin-bottom:13px;
+	padding:0;
+}
+#ctl00_ContentPlaceHolder_pnlKeywords
+{
+	margin-bottom:12px;
+	
+	padding:0;
+}
+#ctl00_ContentPlaceHolder_pnlJobRegion
+{
+	margin-bottom:13px;
+	padding:0;
+}
+
+/* END multi column list for browse categories */
+
+/* START multi column list for FeaturedJob */
+/* Added on 14-02-09 */
+.multicol_featuredjob ul
+{
+	width: 74em;	
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	/*padding-bottom:3px*/
+}
+.multicol_featuredjob ul li
+{
+	float: left;
+	width: 37em;
+	/*padding-bottom:3px*/
+}
+/*.multicol_moz_featuredjob br
+{
+	
+}
+*/
+/*.multicol_featuredjob br
+{
+	display:block;
+	clear:both;
+	
+	_moz-padding:3px;
+	
+	
+	/*padding-moz-hidden-unscrollable*/
+	
+/*}*/
+
+div.multicol_featuredjob
+{
+	/*margin-top:15px;*/
+	margin-bottom: 5px;
+	_margin-bottom: 15px;
+}
+
+/* END multi column list for FeaturedJob */
+
+
+/* START Fix for Internet explorer 7.0 */
+div#ctl00_ContentPlaceHolder_SearchResultsGrid_GridData
+{
+	overflow-x: hidden! important;
+	overflow-y: auto! important;
+	outline-style:none;
+	
+}
+
+
+#ctl00_ContentPlaceHolder_SearchResultsGrid_GridData
+{
+	width:100%;
+	overflow-x: hidden! important;
+	overflow-y: auto! important;
+	padding-bottom:12px;
+}
+
+.SearchResultsGridGridData
+{
+	overflow-x: hidden! important;
+	overflow-y: auto! important;
+}
+
+/* End Fix for Internet explorer 7.0 */
+
+#RAD_SPLITTER_PANE_CONTENT_ctl00_NavigationControl_NavigationPane
+{
+	/*border: solid 1px #162e5c;*/
+}
+
+#ctl00_paneNavigationPanel
+{
+	width:100%;
+	height:100%;
+}
+
+#RAD_SPLITTER_PANE_CONTENT_ctl00_paneNavigationPanel
+{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+#ctl00_ContentPlaceHolder_SearchResultsGrid_ctl00_Header
+{
+	table-layout:auto !important;
+}
+
+#ctl00_ContentPlaceHolder_SearchResultsGrid_ctl00
+{
+	table-layout:auto !important;
+}
+
+/*Newly added class */
+.TasksSplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.TasksPaneStyle
+{
+	overflow:hidden!important;
+	padding-bottom:2px;
+	padding-right:3px;
+}
+
+.TasksPanelStyle
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow-x:auto;
+	overflow-y:auto;
+	border: solid 1px #162e5c;
+}
+
+.SubmitCandidatesSplitterStyle
+{
+	width:100%;
+	height:100%;
+}
+
+.SubmitCandidatesPaneStyle
+{
+	overflow:hidden!important;
+	padding-bottom:12px;
+	padding-right:3px;
+}
+
+.SubmitCandidatesPanelStyle
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow-x:auto;
+	overflow-y:auto;
+	border: solid 1px #162e5c;
+}
+/* Old useless CSS */
+/*
+.Content
+{
+	padding: 10px;	
+	height: 100%;
+}
+
+.Content .Title
+{
+	color: Black;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 8px;	
+}
+
+.Content hr
+{
+	color: #e8e8e8;	
+}
+
+.Content p
+{
+	margin: 3px 0px 7px 0px;
+}
+
+.GridCell
+{
+	height: 100%;
+	border-right: solid 1px #30529c;	
+}*/
+

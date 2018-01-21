@@ -1,42 +1,16 @@
-.projectsPlacard {
-    margin: auto;
+.Projects {
+    width: 50%;
+    height: 80vh;
     position: relative;
-    top: 15vh;
-    height: 60vh;
-    width: 60%;
-    background: rgba(25, 25, 25, .8);
-    border-radius: 30px;
-    color: #ccc;
-    display: inline-block;
-}
-
-.photo {
-    width: 80%;
-    border-radius: 30px;
-}
-
-img.photo {
-    overflow: hidden;
-}
-
-.smallLinks {
-    margin-left: 25px;
-    text-align: left;
-}
-.smallLinks a{
-    text-decoration: none;
+    top: 10vh;
+    border: 2px solid white;
+    margin: auto;
+    background-color: black;
     color: #ccc;
 }
 
-
-.photoBox {
-    width: 25%;
-    /* border: 1px solid white; */
-    margin: auto;
+.Projects h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.aboutText {
-    width: 75%;
-    /* border: 1px solid white; */
-    margin: auto;
-}

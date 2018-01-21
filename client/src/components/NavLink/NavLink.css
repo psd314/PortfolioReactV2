@@ -5,10 +5,15 @@
 .links a {
     text-decoration: none;
     color: rgba(255, 255, 255, .9);
-    font: 2rem Georgia;
+    font: .75rem "Open Sans";
 }
 
 div#projects, div#about, div#home {
     display: inline-block;
+}
+.links a:hover {
+    /* text-decoration: underline; */
+    color: rgba(255, 255, 255, .5);
+    /* font-size: 2.5rem; */
 }
 

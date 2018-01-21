@@ -1,0 +1,163 @@
+
+/* 
+
+if ("undefined" == typeof(GridHelper))
+{
+    GridHelper = new Object();
+
+	GridHelper.DragInitialized = false;
+	GridHelper.WasDrag = false; // Used to prevent the mouseclick event when a row was dragged
+
+	GridHelper.DocumentSelStartHandler = null;
+	GridHelper.SelStartHandler = function () { return false; };	
+	
+	GridHelper.DragCloneRows = null;
+	GridHelper.DraggedRows = null;		
+}
+
+// GridHelper.IsThreadRow ----------------------------------------------------
+GridHelper.IsThreadRow = function (row)
+{
+	return (row.ItemType == "Item" || row.ItemType == "AlternatingItem");
+};
+
+// GridHelper.IsDragging ------------------------------------------------
+GridHelper.IsDragging = function (row)
+{
+	return (GridHelper.DragInitialized && GridHelper.DragCloneRows != null && GridHelper.DraggedRows != null);
+};
+
+// GridHelper.AttachEvent -----------------------------------------------
+GridHelper.AttachEvent = function (object, eventName, handler)
+{
+	if (object.attachEvent)
+	{
+	    object.attachEvent('on' + eventName, handler);
+	}
+	if (object.addEventListener)
+	{
+	    object.addEventListener(eventName, handler, false);
+	}
+}
+
+// GridHelper.InitializeDragDrop ----------------------------------------
+GridHelper.InitializeDragDrop = function ()
+{
+	if (!GridHelper.MouseMoveHooked)
+	{
+		GridHelper.MouseMoveHooked = true;
+		GridHelper.AttachEvent(document, 'mousemove', GridHelper.HandleGridMouseMove);
+	}
+
+	if (!GridHelper.MouseUpHooked)
+	{
+		GridHelper.MouseUpHooked = true;
+		GridHelper.AttachEvent(document, 'mouseup', GridHelper.HandleGridMouseUp);
+	}
+
+	GridHelper.DragInitialized = true;
+}
+
+// GridHelper.EnableRowDrag ---------------------------------------------
+GridHelper.EnableRowDrag = function (row)
+{
+	if (!GridHelper.IsThreadRow(row)) 
+	{
+		return;
+	}
+
+	row.Control.onmousedown = function (e) { GridHelper.HandleGridMouseDown(e, row); };
+}
+
+// GridHelper.BeginDragRows -------------------------------------------------
+GridHelper.BeginDragRows = function (grid)
+{
+    if (GridHelper.DragInitialized && !GridHelper.IsDragging() && !GridHelper.DraggedRows) 
+	{
+	    GridHelper.DragCloneRows = GridHelper.CreateDragCloneRows(grid);
+		
+		GridHelper.DraggedRows = grid.SelectedRows;
+
+		GridHelper.DocumentSelStartHandler = document.onselectstart;
+
+		document.onselectstart = GridHelper.SelStartHandler;
+	}
+}
+
+// GridHelper.EndDragRows ---------------------------------------------------
+GridHelper.EndDragRows = function ()
+{
+	if (GridHelper.IsDragging())
+	{
+		var draggedRows = GridHelper.DraggedRows;
+
+		document.onselectstart = GridHelper.DocumentSelStartHandler;
+
+		document.body.removeChild(GridHelper.DragCloneRows);
+
+		GridHelper.DragCloneRows = null;
+		GridHelper.DraggedRows = null;
+
+		return draggedRows;
+	}
+}
+
+// GridHelper.CreateDragCloneRows -------------------------------------------
+GridHelper.CreateDragCloneRows = function (grid)
+{
+	var dragCloneRows = document.createElement("DIV");
+	var inner = "<table class='RadGrid_Outlook' width='100%'><tbody>";
+	var i = 0;
+	for (i = 0; i < grid.SelectedRows.length; i++)
+	{
+	    inner = inner + "<tr class='GridRow_Outlook'>" + grid.SelectedRows[i].Control.innerHTML + "</tr>";
+	}
+	inner = inner + "</tbody></table>";
+	dragCloneRows.innerHTML = inner;
+	document.body.appendChild(dragCloneRows);
+	dragCloneRows.style.position = "absolute";
+	dragCloneRows.style.display = "block";
+	dragCloneRows.style.width = "48%";
+	return dragCloneRows;
+}
+
+// GridHelper.HandleGridMouseMove ---------------------------------------
+GridHelper.HandleGridMouseMove = function (e)
+{
+	if (GridHelper.IsDragging())
+	{
+		// Used to prevent the mouseclick event when a row was dragged
+		GridHelper.WasDrag = true;
+
+		if (!e) var e = window.event;
+		GridHelper.DragCloneRows.style.top  = e.clientY + document.documentElement.scrollTop + document.body.scrollTop + 3 + "px";
+		GridHelper.DragCloneRows.style.left = e.clientX + document.documentElement.scrollLeft + document.body.scrollLeft + 3 + "px";
+	}
+}
+
+// GridHelper.HandleGridMouseDown ---------------------------------------
+GridHelper.HandleGridMouseDown = function (e, threadRow)
+{
+    if (!e) var e = window.event;
+    if (GridHelper.IsLeftClick(e) && threadRow.Selected)
+	{
+	    var grid = threadRow.Owner;
+	    GridHelper.BeginDragRows(grid);
+    }
+}
+
+// GridHelper.HandleGridMouseUp -----------------------------------------
+GridHelper.HandleGridMouseUp = function (e)
+{
+	GridHelper.EndDragRows();
+}
+
+// GridHelper.IsLeftClick -----------------------------------------------
+GridHelper.IsLeftClick = function (e)
+{
+	return (e && e.button < 2);
+}
+
+GridHelper.InitializeDragDrop();
+
+*/

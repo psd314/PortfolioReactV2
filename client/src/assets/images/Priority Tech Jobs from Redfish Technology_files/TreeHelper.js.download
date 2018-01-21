@@ -1,0 +1,18 @@
+// Check for namespace collision
+if ("undefined" == typeof(TreeHelper))
+{
+	TreeHelper = new Object();
+}
+
+// TreeHelper.InitializeDragDrop ----------------------------------------
+TreeHelper.InitializeDragDrop = function (targetTreeview, dropHandler)
+{
+    var treeViewRootElement = document.getElementById(targetTreeview.Container);
+	
+	if (treeViewRootElement)
+		treeViewRootElement.onmouseup = function (e)
+		{ 
+		    dropHandler(e);
+	    };
+}
+

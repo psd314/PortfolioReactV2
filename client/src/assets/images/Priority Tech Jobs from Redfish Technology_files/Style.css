@@ -1,0 +1,28 @@
+
+/*Changed on 08-12-08 to solve spacing issue of treenodes in mozilla.*/
+
+/*a.TreeNode 
+{ 
+	font-family: Tahoma;
+	font-size: 8pt; 
+	color: #35548a;	
+	padding-left: 10px;
+}*/
+
+span.TreeNodeOver 
+{ 
+	font-family: Tahoma;
+	font-size: 8pt; 
+	color: black;	
+	cursor: hand;
+}
+
+/*a.TreeNodeSelect 
+{ 
+	font-family: Tahoma; 
+	font-size: 8pt; 
+	color: #35548a; 
+	cursor: hand;
+	margin-left: 10px;	
+}*/
+

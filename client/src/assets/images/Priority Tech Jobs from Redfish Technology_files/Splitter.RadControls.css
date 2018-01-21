@@ -1,0 +1,774 @@
+
+.RadSplitter_RadControls .resizeBar
+{
+	padding: 0;
+	font-size: 1px;
+	text-align: center;
+	border-style:none;
+}
+
+/* border style definition */
+/*
+.RadSplitter_RadControls .slideContainerResize,
+.RadSplitter_RadControls .slideContainerResizeHorizontal,
+.RadSplitter_RadControls .slideContainerResizeOver,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal,
+.RadSplitter_RadControls .resizeBarHorizontal,
+.RadSplitter_RadControls .resizeBarOverHorizontal,
+.RadSplitter_RadControls .resizeBarInactiveHorizontal,
+.RadSplitter_RadControls .paneHorizontal
+{
+	border: 1px solid #383838;
+}
+*/
+.RadSplitter_RadControls .pane
+{
+	/*border:solid 1px #162e5c;*/
+}
+
+/*.RadSplitter_RadControls .resizeBar
+{	
+	/* changed on 26-12-08 
+	/*background-color:#C5DAF9; 
+}*/
+
+.RadSplitter_RadControls .resizeBarInactive
+{
+	padding: 0;
+	font-size: 1px;
+	text-align: center;
+	border-style:none;
+}
+
+.RadSplitter_RadControls .resizeBarOver
+{
+	padding: 0;
+	font-size: 1px;
+	text-align: center;
+	background: Highlight;
+	border-style:none;
+}
+
+/* applies to the RadSlidingPanes */
+div.RadSplitter_RadControls,
+table.slideContainer
+{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	border-style:none! important;
+	border-collapse:collapse;
+	height:100%;
+}
+
+table.RadSplitter_RadControls
+{
+	width:100%;
+	height:100%;
+	border-collapse: collapse;
+	border-style:none! important;
+	/*border-bottom: 1px;*/ /* half the size of the border, but at least 1px */
+}
+
+.RadSplitter_RadControls .pane, 
+.RadSplitter_RadControls .paneHorizontal 
+{
+	padding: 0;
+	text-align: left;
+	background-color: #fff;
+}
+
+.RadSplitter_RadControls .slideContainerResize,
+.RadSplitter_RadControls .slideContainerResizeHorizontal,
+.RadSplitter_RadControls .slideContainerResizeOver,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal,
+.RadSplitter_RadControls .resizeBarHorizontal,
+.RadSplitter_RadControls .resizeBarOverHorizontal,
+.RadSplitter_RadControls .resizeBarInactiveHorizontal
+{
+	padding: 0;
+	background: #383838;
+	font-size: 1px;
+	text-align: center;
+}
+
+.RadSplitter_RadControls .resizeBarOverHorizontal
+{
+	background: #383838;
+}
+
+
+.RadSplitter_RadControls .slideContainerResize,
+.RadSplitter_RadControls .slideContainerResizeOver
+{
+	width: 4px;	
+}
+
+.RadSplitter_RadControls .resizeBarHorizontal,
+.RadSplitter_RadControls .resizeBarOverHorizontal,
+.RadSplitter_RadControls .resizeBarInactiveHorizontal,
+.RadSplitter_RadControls .slideContainerResizeHorizontal,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal
+{
+	height: 4px;
+}
+
+
+.RadSplitter_RadControls .resizeBarInactiveHorizontal.first
+{
+	border-top: 0;
+}
+
+
+.RadSplitter_RadControls .resizeBarOverHorizontal,
+.RadSplitter_RadControls .slideContainerResizeOver,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal
+{
+	background: #383838;
+}
+
+/********************* Helper Bar ******************************/
+.RadSplitter_RadControls .helperBarDrag, 
+.RadSplitter_RadControls .helperBarDragHorizontal,
+.RadSplitter_RadControls .helperBarSlideDrag,
+.RadSplitter_RadControls .helperBarSlideDragHorizontal
+
+{
+	font-size: 1px;
+	/*background-color:#ccc;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); 
+	opacity: 0.6;*/
+}
+
+/* resize bar onerror */
+.RadSplitter_RadControls .helperBarError, 
+.RadSplitter_RadControls .helperBarSlideError,
+.RadSplitter_RadControls .helperBarErrorHorizontal
+{
+	/*font-size: 1px;
+	background: #C5DAF9;
+	width:2px;*/
+}
+
+/********************* Colapse Bar *****************************/
+
+.RadSplitter_RadControls .resizeBarHorizontal
+{	
+	background: url("Splitter/splitbarBg.gif");
+}
+/*
+.RadSplitter_RadControls .collapseBarOver,
+.RadSplitter_RadControls .collapseBarOverHorizontal
+{
+	background: white;
+}
+
+.RadSplitter_RadControls .collapseBarError, 
+.RadSplitter_RadControls .collapseBarErrorHorizontal
+{
+	background-color: #f32800;
+}
+*/
+
+.RadSplitter_RadControls .collapseBarWrapper
+{
+	width: 3px;
+	margin: auto;
+}
+
+.RadSplitter_RadControls .collapseBarCollapse
+{	
+	cursor: pointer;
+	width: 3px;
+	height: 27px;
+	margin: auto;
+	text-align:center;
+	background: url(Splitter/splitbar_collapse_h.gif);
+}
+
+.RadSplitter_RadControls .collapseBarExpand
+{	
+	cursor: pointer;
+	width: 3px;
+	height: 27px;
+	margin: auto;
+	text-align:center;
+	background: url(Splitter/splitbar_expand_h.gif);
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalWrapper
+{
+	height: 3px;
+	margin: auto;
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalCollapse
+{	
+	cursor: pointer;
+	width: 27px;
+	height: 3px;
+	margin: auto;
+	text-align:center;
+	float: left;
+	background: url(Splitter/splitbar_collapse_v.gif);
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalExpand
+{	
+	cursor: pointer;
+	width: 27px;
+	height: 3px;
+	margin: auto;
+	text-align:center;
+	float: right;
+	background: url(Splitter/splitbar_expand_v.gif);
+}
+
+.RadSplitter_RadControls .collapseBarCollapseOver
+{	
+	cursor: pointer;
+	width: 3px;
+	height: 27px;
+	margin: auto;
+	text-align:center;
+	background: white url(Splitter/splitbar_collapse_h.gif);
+}
+
+.RadSplitter_RadControls .collapseBarExpandOver
+{	
+	cursor: pointer;
+	width: 3px;
+	height: 27px;
+	margin: auto;
+	text-align:center;
+	background: white url(Splitter/splitbar_expand_h.gif);
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalCollapseOver
+{	
+	cursor: pointer;
+	width: 27px;
+	height: 3px;
+	margin: auto;
+	text-align:center;
+	float: left;
+	background: white url(Splitter/splitbar_collapse_v.gif);
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalExpandOver
+{	
+	cursor: pointer;
+	width: 27px;
+	height: 3px;
+	margin: auto;
+	text-align:center;
+	float: right;
+	background: white url(Splitter/splitbar_expand_v.gif);
+}
+
+.RadSplitter_RadControls .collapseBarCollapseError
+{	
+	cursor: pointer;
+	width: 3px;
+	height: 27px;
+	margin: auto;
+	text-align:center;
+	background: red url(Splitter/splitbar_collapse_h.gif);
+}
+
+.RadSplitter_RadControls .collapseBarExpandError
+{	
+	cursor: pointer;
+	width: 3px;
+	height: 27px;
+	margin: auto;
+	text-align:center;
+	background: red url(Splitter/splitbar_expand_h.gif);
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalCollapseError
+{	
+	cursor: pointer;
+	width: 27px;
+	height: 3px;
+	margin: auto;
+	text-align:center;
+	float: left;
+	background: red url(Splitter/splitbar_collapse_v.gif);
+}
+
+.RadSplitter_RadControls .collapseBarHorizontalExpandError
+{	
+	cursor: pointer;
+	width: 27px;
+	height: 3px;
+	margin: auto;
+	text-align:center;
+	float: right;
+	background: red url(Splitter/splitbar_expand_v.gif);
+}
+
+/***********************************************/
+/*             SLIDE                           */
+/***********************************************/
+
+/************************************************
+	sliding zone 
+*/
+.RadSplitter_RadControls .slideZone
+{
+	background: white;
+}
+
+/************************************************ 
+	pane tabs 
+*/
+.RadSplitter_RadControls .tabsContainer
+{
+	color: #333;
+}
+
+.RadSplitter_RadControls .tabsContainer
+{
+	border-right: 1px solid #383838;
+}
+
+.RadSplitter_RadControls .tabsContainer.bottom
+{
+	border-bottom: 1px solid #383838;
+	border-right: 0; 
+}
+
+.RadSplitter_RadControls .tabsContainer div
+{
+	overflow:hidden;
+	cursor:RadControls;
+	text-align:center;
+	font-size:1px;
+	color: #383838;
+	padding: 6px 0;
+	width:21px;
+	height:auto;
+	border-bottom: 1px solid #313131;
+}
+
+.RadSplitter_RadControls .tabsContainer.bottom div
+{
+	border-right: 1px solid #313131;
+	border-bottom: 0;
+}
+
+.RadSplitter_RadControls .tabsContainer .paneTabContainerExpanded,
+.RadSplitter_RadControls .tabsContainer .paneTabContainerExpandedHorizontal
+{
+	background: #323232;
+	color: #fff;
+}
+
+.RadSplitter_RadControls .paneTabContainerDocked,
+.RadSplitter_RadControls .paneTabContainerDockedHorizontal
+{
+	background: #e4e4e4;
+}
+
+.RadSplitter_RadControls .paneTabText
+{
+	writing-mode: tb-rl;
+	font:10px Arial;
+	white-space:nowrap;
+	margin:2px;
+}
+
+.RadSplitter_RadControls .paneTabIcon
+{
+	margin:2px;
+}
+
+
+/***** tabs on right position *******/
+
+.RadSplitter_RadControls .tabsContainer .right
+{
+	background: url(Img/Splitter/slideZoneBgRight.gif) repeat-y top right;
+}
+
+
+.RadSplitter_RadControls .right .paneTabContainer,
+.RadSplitter_RadControls .right .paneTabContainerExpanded,
+.RadSplitter_RadControls .right .paneTabContainerDocked
+{
+	border-left: solid 1px #c3c3c3;
+	border-right: 0;
+}
+
+
+.RadSplitter_RadControls .right .paneTabContainerExpanded
+{
+	border-left: solid 1px #a8a8a8;
+}
+
+.RadSplitter_RadControls .right .paneTabContainerDocked
+{
+	border-left: solid 1px #8e8e8e;
+}
+
+/***** tabs on top position *******/
+
+.RadSplitter_RadControls .tabsContainer .top
+{
+	background: url(Img/Splitter/slideZoneBgTop.gif) repeat-x top;
+}
+
+
+.RadSplitter_RadControls .top .paneTabContainer,
+.RadSplitter_RadControls .top .paneTabContainerExpanded,
+.RadSplitter_RadControls .top .paneTabContainerDocked
+{
+	border-right: solid 1px #c3c3c3;
+	border-top: solid 1px #c3c3c3;
+	border-left: 0;
+	border-bottom:0;
+	float:left;
+	padding: 0 6px;
+	width:auto;
+}
+
+
+.RadSplitter_RadControls .top .paneTabContainerExpanded
+{
+	border-right: solid 1px #a8a8a8;
+	border-bottom: solid 1px #a8a8a8;
+}
+
+.RadSplitter_RadControls .top .paneTabContainerDocked
+{
+	background: white url(Splitter/slideZoneDockedTabHorizontal.gif) repeat-x top;
+	border-right: solid 1px #8e8e8e;
+}
+
+.RadSplitter_RadControls .top .paneTabText
+{
+	writing-mode: lr-tb;/* RadControls */
+}
+
+.RadSplitter_RadControls .top .paneTabIcon
+{
+	display: block; 
+	float: left
+}
+
+/***** tabs on bottom position *******/
+
+.RadSplitter_RadControls .tabsContainer .bottom
+{
+	background: url(Splitter/slideZoneBgBottom.gif) repeat-x bottom;
+}
+
+.RadSplitter_RadControls .bottom .paneTabContainer,
+.RadSplitter_RadControls .bottom .paneTabContainerExpanded,
+.RadSplitter_RadControls .bottom .paneTabContainerDocked
+{
+	border-right: solid 1px #c3c3c3;
+	border-left: 0;
+	float:left;
+	padding: 0 6px;
+	width:auto;
+}
+
+
+.RadSplitter_RadControls .bottom .paneTabContainerExpanded
+{
+	border-right: solid 1px #a8a8a8;
+	padding-bottom: 1px;
+	border-bottom: 0;
+}
+
+.RadSplitter_RadControls .bottom .paneTabContainerDocked
+{
+	border-right: solid 1px #8e8e8e;
+}
+
+.RadSplitter_RadControls .bottom .paneTabText
+{
+	writing-mode: lr-tb;/* RadControls */
+}
+
+.RadSplitter_RadControls .bottom .paneTabIcon
+{
+	display: block; 
+	float: left
+}
+
+/*****  -- End tabs on bottom position *******/
+
+/************************************************ 
+	slide/dock containers 
+*/
+.RadSplitter_RadControls .slideContainer 
+{
+	border: 0;
+	border-collapse: collapse;
+}
+
+.RadSplitter_RadControls .slideContainerDocked
+{
+	
+}
+
+.RadSplitter_RadControls .slideHeader, 
+.RadSplitter_RadControls .slideHeaderDocked
+{
+	background: #f7f7f7 url(Splitter/slideHeader.gif) repeat-x top left;
+	color: #fff;
+}
+
+.RadSplitter_RadControls .slideContainerResize,
+.RadSplitter_RadControls .slideContainerResizeHorizontal
+{ 
+     background: #787878 none;
+}
+
+.RadSplitter_RadControls .slideContainerResizeOver,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal
+{
+	background: #383838 none;
+}
+
+.RadSplitter_RadControls .slideContainerResize,
+.RadSplitter_RadControls .slideContainerResizeOver
+{
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.RadSplitter_RadControls .slideContainerResizeHorizontal,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal
+{
+	border-left: 0;
+	border-right: 0;
+}
+
+/*
+.RadSplitter_RadControls .slideHeaderIcon
+{
+	margin: 1px 3px;
+	border:0;
+} 
+
+.RadSplitter_RadControls .slideHeaderIconOver
+{
+	cursor: pointer;
+	background: url(Splitter/IconHover.gif) no-repeat center center;
+	margin: 1px 3px;
+} 
+*/
+
+.RadSplitter_RadControls .slideHeaderIconWrapper
+{
+	width: 21px;
+}
+
+.RadSplitter_RadControls .slideHeaderIconsWrapper
+{
+	float: right;
+}
+
+.RadSplitter_RadControls .slideHeaderUndockIcon,
+.RadSplitter_RadControls .slideHeaderDockIcon,
+.RadSplitter_RadControls .slideHeaderCollapseIcon
+{	
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 1px 3px;
+	border: 0;
+}
+
+.RadSplitter_RadControls .slideHeaderUndockIconOver,
+.RadSplitter_RadControls .slideHeaderDockIconOver,
+.RadSplitter_RadControls .slideHeaderCollapseIconOver
+{	
+	width: 15px;
+	height: 15px;
+	float: left;
+	cursor: pointer;
+	margin: 1px 3px;
+}
+
+.RadSplitter_RadControls .slideHeaderUndockIcon,
+.RadSplitter_RadControls .slideHeaderUndockIconOver
+{
+	background: url(Splitter/undock.gif);
+	background-position: -2339px 0;
+}
+
+.RadSplitter_RadControls .slideHeaderDockIcon,
+.RadSplitter_RadControls .slideHeaderDockIconOver
+{
+	background: url(Splitter/dock.gif);
+}
+
+.RadSplitter_RadControls .slideHeaderCollapseIcon,
+.RadSplitter_RadControls .slideHeaderCollapseIconOver
+{
+	background: url(Splitter/close.gif);
+}
+
+.RadSplitter_RadControls .slideHeaderUndockIcon
+{
+	background-position: 0 0;
+}
+
+.RadSplitter_RadControls .slideHeaderUndockIconOver
+{
+	background-position: 0 100%;
+} 
+
+.RadSplitter_RadControls .slideHeaderDockIcon
+{
+	background-position: 0 0;
+}
+
+.RadSplitter_RadControls .slideHeaderDockIconOver
+{
+	background-position: 0 100%;
+} 
+
+.RadSplitter_RadControls .slideHeaderCollapseIcon
+{
+	background-position: 0 0;
+}
+
+.RadSplitter_RadControls .slideHeaderCollapseIconOver
+{
+	background-position: 0 100%;
+} 
+
+.RadSplitter_RadControls .slideTitle, 
+.RadSplitter_RadControls .slideTitleDocked 
+{
+	font:11px Arial;
+	color: #fff;
+	white-space:nowrap;
+	margin-left:5px;
+	margin-right:5px;
+	text-align:left;
+	line-height: 25px;
+}
+
+.RadSplitter_RadControls .slideTitleContainer
+{
+	background-color: #f7f7f7;
+	background: url(Splitter/slideHeader.gif) repeat-x;
+}
+
+.RadSplitter_RadControls .slideContent, 
+.RadSplitter_RadControls .slideContentDocked
+{
+	font: 10px Arial;
+	color: black;
+	background-color: white;
+	padding: 5px;
+	text-align: left;
+}
+
+.RadSplitter_RadControls .helperBarSlideDrag,
+.RadSplitter_RadControls .slideContainerResize,
+.RadSplitter_RadControls .slideContainerResizeOver
+{
+	cursor: w-resize;
+}
+
+.RadSplitter_RadControls .helperBarSlideDragHorizontal,
+.RadSplitter_RadControls .slideContainerResizeHorizontal,
+.RadSplitter_RadControls .slideContainerResizeOverHorizontal
+{
+	cursor: n-resize;
+}
+
+/*****************************************************************************/
+/* these below are not skin/border size specific. Shared between all skins   */
+/*****************************************************************************/
+.nested,
+.nestedHorizontal 
+{
+	border-width: 0 !important;
+}
+
+/************ nested vertical ****************/
+ 
+.nested .resizeBar,
+.nested .resizeBarOver,
+.nested .resizeBarInactive  
+{
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+}
+
+.nested .pane
+{
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	width:100%;
+}
+
+.nested .pane.firstItem,
+.nested .resizeBar.firstItem,
+.nested .resizeBarOver.firstItem,
+.nested .resizeBarInactive.firstItem
+{
+	border-left: 0 !important;
+}
+
+.nested .pane.lastItem, 
+.nested .resizeBar.lastItem,
+.nested .resizeBarOver.lastItem,
+.nested .resizeBarInactive.lastItem
+{
+	border-right: 0 !important;
+}
+
+.nested .pane.firstItem.lastItem, 
+.nested .resizeBar.firstItem.lastItem,
+.nested .resizeBarOver.firstItem.lastItem,
+.nested .resizeBarInactive.firstItem.lastItem
+{
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+
+/************ nested horizontal ****************/
+
+.nestedHorizontal .paneHorizontal, 
+.nestedHorizontal .resizeBarHorizontal,
+.nestedHorizontal .resizeBarOverHorizontal,
+.nestedHorizontal .resizeBarInactiveHorizontal
+{
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+
+.nestedHorizontal .paneHorizontal.firstItem,
+.nestedHorizontal .resizeBarHorizontal.firstItem,
+.nestedHorizontal .resizeBarOverHorizontal.firstItem,
+.nestedHorizontal .resizeBarInactiveHorizontal.firstItem
+{
+	border-top: 0 !important;
+}
+
+.nestedHorizontal .paneHorizontal.lastItem, 
+.nestedHorizontal .resizeBarHorizontal.lastItem,
+.nestedHorizontal .resizeBarOverHorizontal.lastItem,
+.nestedHorizontal .resizeBarInactiveHorizontal.lastItem
+{
+	border-bottom: 0 !important;
+}
+
+.nestedHorizontal .paneHorizontal.firstItem.lastItem, 
+.nestedHorizontal .resizeBarHorizontal.firstItem.lastItem,
+.nestedHorizontal .resizeBarOverHorizontal.firstItem.lastItem,
+.nestedHorizontal .resizeBarInactiveHorizontal.firstItem.lastItem
+{
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+}

@@ -1,12 +1,23 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;  
+}
+
+.smallLinks a:hover {
+  color: rgba(255, 255, 255, .5);
 }
 
 .App {
   text-align: center;
-  background-image: url("./assets/images/spaceBackground.jpeg");
-  background-size: cover;
+  /* background-image: url("./assets/images/gears.jpeg");
+  background-size: cover; */
+  background: no-repeat center url("./assets/images/gears.jpeg");
+
   overflow: hidden;
 }
 
@@ -16,8 +27,12 @@ footer {
   text-align: right;
 }
 
-footer p {
-  margin-right: 20px;
+footer span {
+  margin-right: 35px;
+}
+
+footer a {
+  margin: 0 7px;
 }
 
 .container {
@@ -26,4 +41,5 @@ footer p {
 
 
 
-
+/* gears background - pexel */
+/* d3 gears mike bostock */

@@ -1,0 +1,46 @@
+.Contact {
+    width: 50%;
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+    border: 2px solid white;
+    margin: auto;
+    background-color: black;
+    color: #ccc;
+}
+
+.Contact h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contactText {
+    font-size: 1.5rem;
+}
+
+.contactText a {
+    color: white;
+}
+
+.contactText p {
+    margin: 20px 0;
+}
+
+.contactText a:hover {
+    color: rgba(255, 255, 255, .5);
+  }
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.socialLinks a {
+    margin: 0 20px;
+}
+
+.socialLinks img {
+    width: 75%;
+}

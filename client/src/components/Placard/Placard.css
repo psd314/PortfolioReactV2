@@ -1,4 +1,4 @@
-.placardStyles {
+/* .placardStyles {
     margin: auto;
     position: relative;
     top: 15vh;
@@ -8,4 +8,15 @@
     border-radius: 30px;
     color: #ccc;
     display: inline-block;
+} */
+
+.PlacardStyles {
+    width: 50%;
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+    border: 1px solid white;
+    margin: auto;
+    background-color: black;
+    color: #ccc;
 }

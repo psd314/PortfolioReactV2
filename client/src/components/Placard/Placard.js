@@ -3,7 +3,7 @@ import "./Placard.css";
 
 const Placard = (props) => {
     return (
-        <div className="placardStyles">
+        <div className="PlacardStyles">
             <h1>{props.title}</h1>
         </div>
     );
