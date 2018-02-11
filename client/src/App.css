@@ -17,7 +17,11 @@ a {
   /* background-image: url("./assets/images/gears.jpeg");
   background-size: cover; */
   background: no-repeat center url("./assets/images/gears.jpeg");
-
+/*  background-image: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8), 
+        rgba(0, 0, 0, 0.8)), 
+        url("./assets/images/gears.jpeg");*/
   overflow: hidden;
 }
 

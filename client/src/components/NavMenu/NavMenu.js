@@ -1,17 +1,17 @@
 import React from "react";
 import "./NavMenu.css";
-import NavLink from "../NavLink/NavLink";
+import NavigationLink from "../NavigationLink/NavigationLink";
 
 
 const NavMenu = () => {
     return (
         <nav className="navMenu">
-            <NavLink pageRoute="/" linkText="Home" />
-            <NavLink pageRoute="/About" linkText="About" />
-            <NavLink pageRoute="/Contact" linkText="Contact" />
-            <NavLink pageRoute="/Projects" linkText="Projects" />
+            <NavigationLink pageRoute="/" linkText="Home" />
+            <NavigationLink pageRoute="/About" linkText="About" />
+            <NavigationLink pageRoute="/Contact" linkText="Contact" />
+            <NavigationLink pageRoute="/Projects" linkText="Projects" />
         </nav>
     );
-}
+} 
 
 export default NavMenu;
