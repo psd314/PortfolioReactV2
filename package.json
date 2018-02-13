@@ -1,6 +1,6 @@
 {
   "name": "portfolioreactv2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Portfolio built using React, Redux, D3",
   "main": "server.js",
   "scripts": {
